@@ -1,0 +1,21 @@
+package com.parking.parkinglot;
+
+import jakarta.servlet.*;
+import jakarta.servlet.http.*;
+import jakarta.servlet.annotation.*;
+
+import java.io.IOException;
+
+@WebServlet(name = "cars", value = "/cars")
+public class cars extends HttpServlet {
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setAttribute("numberOfFreeParkingSpots", 10);
+           // request.getRequestDispatcher(path:"/WEB-INF/pages/cars.jsp").forward(request,response);
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse
+            response) throws ServletException, IOException {
+    }
+}
