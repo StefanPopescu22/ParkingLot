@@ -1,5 +1,6 @@
 package com.parking.parkinglot.entities;
 
+import com.parking.parkinglot.servlets.CarPhoto;
 import jakarta.persistence.*;
 
 @Entity
@@ -51,5 +52,12 @@ public class Car {
 
     public void setParkingSpot(String parkingSpot) {
         this.parkingSpot = parkingSpot;
+    }
+
+    public Object getPhoto() {
+        return owner;
+    }
+
+    public void setPhoto(CarPhoto photo) {
     }
 }
