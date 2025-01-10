@@ -3,6 +3,7 @@
 
 <t:pageTemplate pageTitle="Cars">
     <h1>Cars</h1>
+    <a class="btn btn-primary btn-lg" href="${pageContext.request.contextPath}/AddCar"></a>
     <div class="container text-center">
         <div class="row">
             <div class="col">
@@ -28,4 +29,5 @@
         </div>
     </div>
     <h5>Free parking spots: ${numberOfFreeParkingSpots}</h5>
+
 </t:pageTemplate>
